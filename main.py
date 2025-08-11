@@ -48,8 +48,9 @@ class Record:
          if not old:
              raise ValueError("Старий номер не знайдено")
          
-         self.remove_phone(old_phone)
+        
          self.add_phone(new_phone)
+         self.remove_phone(old_phone)
          return True
          
 
